@@ -1,8 +1,18 @@
 pipeline {
-  agent {label 'master'}
+  agent any
   stages {
-    stage('test') {
-      echo "Hello World!"
+
+    stage ("Build") {
+      echo "Building..."
     }
+
+    stage('Test') {
+      echo "Testing..."
+    }
+
+    stage ("Deploy") {
+      echo "Deploying.."
+    }
+
   }
 }
