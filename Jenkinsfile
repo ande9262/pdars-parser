@@ -1,10 +1,13 @@
 pipeline {
-  agent any
+  agent {
+    docker {image 'centos8'}
+  }
   stages {
 
     stage ("Build") {
       steps {
         echo "Building..."
+        sh "ls -ahl"
        }
     }
 
