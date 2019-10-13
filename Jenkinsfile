@@ -8,6 +8,7 @@ pipeline {
       steps {
         echo "Building..."
         sh "ls -ahl"
+        sh "pwd"
        }
     }
 
