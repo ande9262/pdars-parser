@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    docker {image 'arm32v7/centos'}
+    docker {image 'arm32v7/python'}
   }
   stages {
 
