@@ -8,7 +8,7 @@ pipeline {
       steps {
         echo "Building..."
         sh "ls -ahl"
-        sh "pwd"
+        sh "python setup.py sdist"
        }
     }
 
