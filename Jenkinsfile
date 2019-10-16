@@ -21,6 +21,7 @@ pipeline {
     stage ("Deploy") {
       steps {
         echo "Deploying.."
+		archiveArtifacts 'dist/pdars-parser*.zip'
        }
     }
 
