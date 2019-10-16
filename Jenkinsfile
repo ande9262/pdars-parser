@@ -8,7 +8,7 @@ pipeline {
       steps {
         echo "Building..."
         sh "ls -ahl"
-        sh "python setup.py sdist -formats=zip"
+        sh "python setup.py sdist --formats=zip"
        }
     }
 
