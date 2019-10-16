@@ -8,7 +8,7 @@ pipeline {
       steps {
         echo "Building..."
         sh "ls -ahl"
-        sh "python setup.py sdist"
+        sh "python setup.py sdist -formats=zip"
        }
     }
 
@@ -24,6 +24,12 @@ pipeline {
 		archiveArtifacts 'dist/pdars-parser*.zip'
        }
     }
+	
+	stage ("Clean") {
+	  steps {
+	    cleanWs(patterns: [[pattern: '**/*.zip', type: 'EXCLUDE']])
+	  }
+	}
 
   }
 }
