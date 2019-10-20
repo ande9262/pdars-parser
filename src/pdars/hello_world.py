@@ -1,10 +1,21 @@
 #!/usr/bin/python
 import argparse
 
+import numpy
+
 
 def main(args):
 
-    print("Hi {0}".format(args.name))
+    print(create_message(args.name))
+
+    x = numpy.array([1,2,3])
+
+    print("Printing numpy array")
+    print(x)
+
+
+def create_message(name):
+    return "Hi {0}".format(name)
 
 
 if __name__ == "__main__":
