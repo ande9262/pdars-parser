@@ -1,5 +1,5 @@
 #FROM centos:latest
-FROM armhf/alpine
+FROM armhf/fedora
 
 RUN yum -y update &&\
     yum -y install python3 &&\
