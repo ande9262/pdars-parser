@@ -1,8 +1,9 @@
 pipeline {
-  agent {
-    any
+  //agent {
+    //any
     //docker {image 'arm32v7/python'}
-  }
+  //}
+  agent any
   stages {
 
     stage ("Build") {
