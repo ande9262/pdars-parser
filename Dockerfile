@@ -1,5 +1,5 @@
 #FROM centos:latest
-FROM arm32v7/python
+FROM armhf/alpine
 
 RUN yum -y update &&\
     yum -y install python3 &&\
