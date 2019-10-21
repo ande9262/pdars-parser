@@ -9,7 +9,7 @@ pipeline {
     stage ("Build") {
       steps {
         echo "Building..."
-        // sh "ls -ahl"
+        sh "ls -ahl"
         // sh "python setup.py sdist --formats=zip"
 
         sh "docker build -t test Dockerfile"
