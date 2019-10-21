@@ -1,4 +1,5 @@
-FROM centos:latest
+#FROM centos:latest
+FROM arm32v7/python
 
 RUN yum -y update &&\
     yum -y install python3 &&\
